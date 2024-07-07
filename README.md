@@ -3,8 +3,8 @@
 > Quickly access your [JIRA](https://www.atlassian.com/software/jira) Issues, Boards and more, directly from [Ulauncher](https://ulauncher.io/).
 
 [![Ulauncher Extension](https://img.shields.io/badge/Ulauncher-Extension-yellowgreen.svg?style=for-the-badge)](https://ext.ulauncher.io/)
-[![CI Status](https://img.shields.io/github/workflow/status/brpaz/ulauncher-jira/CI?color=orange&label=actions&logo=github&logoColor=orange&style=for-the-badge)](https://github.com/brpaz/ulauncher-jira)
-[![License](https://img.shields.io/github/license/brpaz/ulauncher-jira.svg?style=for-the-badge)](https://github.com/brpaz/ulauncher-jira/blob/master/LICENSE)
+[![CI Status](https://img.shields.io/github/workflow/status/mglants/ulauncher-jira-server/CI?color=orange&label=actions&logo=github&logoColor=orange&style=for-the-badge)](https://github.com/mglants/ulauncher-jira-server)
+[![License](https://img.shields.io/github/license/mglants/ulauncher-jira-server.svg?style=for-the-badge)](https://github.com/mglants/ulauncher-jira-server/blob/master/LICENSE)
 
 
 ## Demo
@@ -27,7 +27,7 @@ You can install them, using `pip`.
 Ex:
 
 ```bash
-pip install -r https://raw.githubusercontent.com/brpaz/ulauncher-jira/main/requirements.txt
+pip install -r https://raw.githubusercontent.com/mglants/ulauncher-jira-server/main/requirements.txt
 ```
 
 ### Install the extension
@@ -36,7 +36,7 @@ pip install -r https://raw.githubusercontent.com/brpaz/ulauncher-jira/main/requi
 Open ulauncher preferences window -> extensions -> add extension and paste the following url:
 
 ```
-https://github.com/brpaz/ulauncher-jira
+https://github.com/mglants/ulauncher-jira-server
 ```
 
 ### Configure settings
@@ -60,13 +60,13 @@ This extension provides a few keywords, including:
 - `jira:sprint` - Search on the current sprint issues.
 ### Custom JQL filters
 
-This extemsion allows you to create shortcuts for custom JQL filters. For create your own filters, edit the `~/.config/ulauncher/com.github.brpaz.ulauncher-jira/filters.yaml` and you should be able to execute then in the `JIRA: Custom Filters` menu in the extension.
+This extemsion allows you to create shortcuts for custom JQL filters. For create your own filters, edit the `~/.config/ulauncher/com.github.mglants.ulauncher-jira-server/filters.yaml` and you should be able to execute then in the `JIRA: Custom Filters` menu in the extension.
 
 
 ## Development
 
 ```
-git clone https://github.com/brpaz/ulauncher-jira
+git clone https://github.com/mglants/ulauncher-jira-server
 make link
 ```
 
@@ -90,16 +90,11 @@ If this project was useful to you in some form, I would be glad to have your sup
 
 The sinplest form of support is to give a ⭐️ to this repo.
 
-You can also contribute with [GitHub Sponsors](https://github.com/sponsors/brpaz).
+You can also contribute with [GitHub Sponsors](https://github.com/sponsors/mglants).
 
-[![GitHub Sponsors](https://img.shields.io/badge/GitHub%20Sponsors-Sponsor%20Me-red?style=for-the-badge)](https://github.com/sponsors/brpaz)
-
-Or if you prefer a one time donation to the project, you can simple:
-
-<a href="https://www.buymeacoffee.com/Z1Bu6asGV" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee"
-style="height: auto !important;width: auto !important;" ></a>
+[![GitHub Sponsors](https://img.shields.io/badge/GitHub%20Sponsors-Sponsor%20Me-red?style=for-the-badge)](https://github.com/sponsors/mglants)
 
 ---
 ## License
 
-MIT &copy; Bruno Paz
+MIT &copy; Mark GLants
