@@ -1,8 +1,8 @@
 {
   "required_api_version": "^2.0.0",
-  "name": "Jira",
-  "description": "Quickly access your JIRA tickets from Ulauncher",
-  "developer_name": "Bruno Paz",
+  "name": "Jira Server",
+  "description": "Quickly access your JIRA Server tickets from Ulauncher",
+  "developer_name": "Mark Glants",
   "icon": "images/icon.png",
   "options": {
     "query_debounce": 0.2
@@ -55,20 +55,13 @@
       "type": "input",
       "name": "JIRA Server URL",
       "description": "The URL to your JIRA server",
-      "default_value": "https://jira.atlassian.com"
-    },
-    {
-      "id": "email",
-      "type": "input",
-      "name": "Email Address",
-      "description": "Email Address of your JIRA user",
       "default_value": ""
     },
     {
       "id": "access_token",
       "type": "input",
       "name": "Access Token",
-      "description": "The access token to authenticate on Jira API",
+      "description": "The PAT to authenticate on Jira Server API",
       "default_value": ""
     },
     {

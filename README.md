@@ -44,8 +44,7 @@ https://github.com/brpaz/ulauncher-jira
 Before being able to use this extension, you must configure a few settings with your JIRA account credentials. Open Ulauncher Preferences and input the following settings:
 
 - **server_url** - Your JIRA server URL.
-- **email** - Your user email
-- **access_token** - Your JIRA API Token. (For Jira Cloud, you can create your token [here](https://id.atlassian.com/manage-profile/security/api-tokens))
+- **access_token** - Your JIRA PAT Token. (For Jira Server, you must create your token [Docs](https://confluence.atlassian.com/enterprise/using-personal-access-tokens-1026032365.html))
 
 
 ## Usage

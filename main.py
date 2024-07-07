@@ -1,6 +1,6 @@
 """ Main Module """
 
-from extension.extension import JiraExtension
+from extension.extension import JiraServerExtension
 
 if __name__ == '__main__':
-    JiraExtension().run()
+    JiraServerExtension().run()

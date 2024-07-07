@@ -23,7 +23,7 @@ from .utils.filters import Filters
 logger = logging.getLogger(__name__)
 
 
-class JiraExtension(Extension):
+class JiraServerExtension(Extension):
     """ Main Extension Class  """
 
     jira_client: JIRA
@@ -32,7 +32,7 @@ class JiraExtension(Extension):
 
     def __init__(self):
         """ Initializes the extension """
-        super(JiraExtension, self).__init__()
+        super(JiraServerExtension, self).__init__()
         self.subscribe(KeywordQueryEvent, KeywordQueryEventListener())
         self.subscribe(ItemEnterEvent, ItemEnterEventListener())
 
@@ -329,10 +329,9 @@ class JiraExtension(Extension):
                 on_enter=OpenUrlAction(issue_url))
         ])
 
-    def create_jira_client(self, server_url: str, username: str,
-                           access_token: str):
+    def create_jira_client(self, server_url: str, access_token: str):
         self.jira_client = JIRA(server=server_url,
-                                basic_auth=(username, access_token))
+                                token_auth=(access_token))
 
     def get_jira_issue_url(self, issue: Issue):
         return "{}/browse/{}".format(self.preferences["server_url"], issue.key)
